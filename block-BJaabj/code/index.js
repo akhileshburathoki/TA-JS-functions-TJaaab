@@ -53,3 +53,67 @@
   - Alert `The factorial of [number] is [factorial]`
 
 */
+// Functions defination
+
+
+function sayHello() {
+  alert(`Hello World`);
+}
+
+// Functions call
+sayHello();
+
+// Function defination
+
+function fullName() {
+  let firstName=prompt(`Write your first name.`);
+  let lastName=prompt(`Write your last name.`);
+  let fullName=(firstName + lastName);
+  alert(fullName);
+}
+// Functions call
+fullName();
+
+// Functions defination
+function addTwoNumbers() {
+  let firstNum=+prompt(`Enter First number`);
+  let secondNum=+prompt(`Enter Second number`);
+  let sum=(firstNum + secondNum);
+  alert(sum);
+}
+// Functions call
+addTwoNumbers();
+
+// Functions defination
+function getTable () {
+  let num=prompt(`Enter a number`)
+  for(let i=1;i<=10;i=i + 1){
+      console.log(`${num} * ${i} = ${num*i}`)
+  }
+}
+// Functions call
+getTable()
+
+// Functions defination
+function isLeapYear() {
+  let year=prompt(`Enter a year`)
+  if (year % 4 == 0) {
+      alert(`${year} is a leap year`)
+  }else {
+      alert(`${year} is not a leap year`)
+  }
+}
+// Functions call
+isLeapYear()
+
+// Functions defination
+function getFactorial() {
+  let number=prompt(`Enter a number`)
+  let ans=1
+  for (let i = 1; i <= number; i=i+1) {
+      ans= ans * i;
+      console.log(ans);
+  }
+}
+// Functions call
+getFactorial();
